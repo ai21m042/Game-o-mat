@@ -4,7 +4,7 @@
 namespace GameOMat {
 
 	void Print() {
-		printf("Hello Game-o-mat!");
+		printf("Hello Game-o-mat!\n");
 	}
 
 }

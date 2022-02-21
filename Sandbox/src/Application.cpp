@@ -7,9 +7,9 @@ namespace GameOMat {
 }
 
 void main() {
-	printf("Starting Sandbox");
+	printf("Starting Sandbox\n");
 
 	GameOMat::Print();
 
-	printf("Ending Sandbox");
+	printf("Ending Sandbox\n");
 }
