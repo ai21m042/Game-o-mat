@@ -4,16 +4,16 @@
 namespace GameOMat {
 
 	Application::Application() {
-	
+		// stub
 	}
 
 	Application::~Application() {
-	
+		// stub
 	}
 	
 	void Application::Run() {
 		while (true) {
-			// todo
+			// todo game loop, atm just an endless loop that does nothing
 		}
 	}
 }

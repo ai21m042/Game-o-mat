@@ -2,10 +2,11 @@
 
 #ifdef GOM_PLATFORM_WINDOWS
 
+// this method has to be implemented by the game
 extern GameOMat::Application* GameOMat::CreateApplication();
 
 int main(int argc, char** argv) {
-	printf("Game-O-Mat Engine");
+	printf("Starting Game-O-Mat Engine ...\n");
 
 	auto app = GameOMat::CreateApplication();
 
@@ -14,4 +15,4 @@ int main(int argc, char** argv) {
 	delete app;
 }
 
-#endif // GOM
+#endif // GOM_PLATFORM_WINDOWS
