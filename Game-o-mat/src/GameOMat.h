@@ -2,8 +2,8 @@
 
 // Only for use by Game-O-Mat application
 
-#include <stdio.h>
 #include "GameOMat/Application.h"
+#include "GameOMat/Log.h"
 
 // ------------------ ENTRY POINT ------------------
 #include "GameOMat/EntryPoint.h"
