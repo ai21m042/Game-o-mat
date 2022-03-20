@@ -4,7 +4,7 @@
 class Sandbox : public GameOMat::Application {
 public:
 	Sandbox() {
-	
+		GOM_INFO("Starting Sandbox ... ");
 	}
 	
 	~Sandbox() {

@@ -6,12 +6,11 @@
 extern GameOMat::Application* GameOMat::CreateApplication();
 
 int main(int argc, char** argv) {
-	printf("Starting Game-O-Mat Engine ...\n");
-
 	GameOMat::Log::Init();
-	//	GOM_CORE_WARN("Initialized Logging!");
-	//	int a = 13;
-	//	GOM_INFO("Hello Game-O-Mat!, test var = {0}", a);
+	GOM_CORE_INFO("Starting Game-O-Mat ...");
+
+	GOM_CORE_WARN("Checking Core Logger");
+	GOM_WARN("Checking Client Logger");
 
 	auto app = GameOMat::CreateApplication();
 	app->Run();
