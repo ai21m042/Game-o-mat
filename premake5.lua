@@ -64,14 +64,17 @@ project "Game-o-mat"
 
 	filter "configurations:Debug"
 		defines "GOM_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "GOM_RELEASE"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "configurations:Distribution"
 		defines "GOM_DISTRIBUTION"
+		buildoptions "/MD"
 		optimize "On"
 
 project "Sandbox"
@@ -111,12 +114,15 @@ project "Sandbox"
 
 	filter "configurations:Debug"
 		defines "GOM_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "GOM_RELEASE"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "configurations:Distribution"
 		defines "GOM_DISTRIBUTION"
+		buildoptions "/MD"
 		optimize "On"

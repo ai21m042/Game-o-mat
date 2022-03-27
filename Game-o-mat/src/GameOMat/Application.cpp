@@ -1,11 +1,12 @@
 #include "gompch.h"
 #include "Application.h"
 
+#include "GLFW/glfw3.h"
 
 namespace GameOMat {
 
 	Application::Application() {
-		// stub
+		mWindow = std::unique_ptr<Window>(Window::Create());
 	}
 
 	Application::~Application() {
@@ -17,8 +18,22 @@ namespace GameOMat {
 		WindowResizeEvent e(1280, 720);
 		GOM_TRACE(e);
 
-		while (true) {
-			// todo game loop, atm just an endless loop that does nothing
+		if (e.IsInCategory(EventCategoryApplication)) {
+			while (mRunning) {
+				GOM_TRACE(e);
+				glClearColor(0.3, 0.3, 0.3, 1); // simple grey background :)
+				glClear(GL_COLOR_BUFFER_BIT);
+				mWindow->OnUpdate();
+			}
 		}
+
+		if (e.IsInCategory(EventCategoryInput)) {
+			GOM_TRACE(e);
+		}
+		
+
+
+		// todo game loop, atm just an endless loop that does nothing
+		while (true);
 	}
 }

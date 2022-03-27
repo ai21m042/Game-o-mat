@@ -7,6 +7,12 @@
     <Filter Include="GameOMat\Events">
       <UniqueIdentifier>{54E5FFCB-C070-6D90-C981-F084358CC990}</UniqueIdentifier>
     </Filter>
+    <Filter Include="GameOMat\Platform">
+      <UniqueIdentifier>{C491ACE7-30A8-AA7D-791F-369FE5747B05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameOMat\Platform\Windows">
+      <UniqueIdentifier>{FEBF0105-6A82-358F-B332-C41B1F340E6D}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\GameOMat.h" />
@@ -34,6 +40,12 @@
     <ClInclude Include="src\GameOMat\Log.h">
       <Filter>GameOMat</Filter>
     </ClInclude>
+    <ClInclude Include="src\GameOMat\Platform\Windows\WindowsWindow.h">
+      <Filter>GameOMat\Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameOMat\Window.h">
+      <Filter>GameOMat</Filter>
+    </ClInclude>
     <ClInclude Include="src\gompch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -42,6 +54,9 @@
     </ClCompile>
     <ClCompile Include="src\GameOMat\Log.cpp">
       <Filter>GameOMat</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameOMat\Platform\Windows\WindowsWindow.cpp">
+      <Filter>GameOMat\Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\gompch.cpp" />
   </ItemGroup>

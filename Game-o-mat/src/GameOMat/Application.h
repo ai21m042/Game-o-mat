@@ -4,6 +4,7 @@
 
 #include "GameOMat/Log.h"
 #include "GameOMat/Events/ApplicationEvent.h"
+#include "Window.h"
 
 namespace GameOMat {
 
@@ -16,6 +17,10 @@ namespace GameOMat {
 		virtual ~Application();
 
 		void Run();
+
+	private:
+		std::unique_ptr<Window> mWindow;
+		bool mRunning = true;
 	};
 
 	// this is the method where the game inits his class of the application

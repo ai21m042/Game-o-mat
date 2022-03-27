@@ -12,6 +12,8 @@
 #include <unordered_map>
 #include <unordered_set>
 
+#include "GameOMat/Log.h"
+
 #ifdef GOM_PLATFORM_WINDOWS
 	#include <Windows.h>
 #endif // GOM_
