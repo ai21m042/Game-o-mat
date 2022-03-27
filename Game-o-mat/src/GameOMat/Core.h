@@ -12,3 +12,5 @@
 #else
 	#error Game-O-Mat only supoorts Windows!
 #endif // GOM_PLATFORM_WINDOWS
+
+#define BIT(x) (1 << x)

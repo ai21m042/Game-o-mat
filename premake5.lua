@@ -26,6 +26,7 @@ project "Game-o-mat"
 
 	includedirs 
 	{
+		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include"
 	}
 

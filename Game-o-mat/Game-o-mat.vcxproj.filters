@@ -4,6 +4,9 @@
     <Filter Include="GameOMat">
       <UniqueIdentifier>{70F75832-5CC4-B33D-85DD-A1E57109E9CB}</UniqueIdentifier>
     </Filter>
+    <Filter Include="GameOMat\Events">
+      <UniqueIdentifier>{54E5FFCB-C070-6D90-C981-F084358CC990}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\GameOMat.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\GameOMat\EntryPoint.h">
       <Filter>GameOMat</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameOMat\Events\ApplicationEvent.h">
+      <Filter>GameOMat\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameOMat\Events\Event.h">
+      <Filter>GameOMat\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameOMat\Events\KeyEvent.h">
+      <Filter>GameOMat\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameOMat\Events\MouseEvent.h">
+      <Filter>GameOMat\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\GameOMat\Log.h">
       <Filter>GameOMat</Filter>

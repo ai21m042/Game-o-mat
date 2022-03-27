@@ -2,6 +2,9 @@
 
 #include "Core.h"
 
+#include "GameOMat/Log.h"
+#include "GameOMat/Events/ApplicationEvent.h"
+
 namespace GameOMat {
 
 	// our main class for init and running the application
