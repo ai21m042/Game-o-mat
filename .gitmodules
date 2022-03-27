@@ -1,3 +1,6 @@
 [submodule "Game-o-mat/vendor/spdlog"]
 	path = Game-o-mat/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule ".\\Game-o-mat\\vendor\\GLFW"]
+	path = .\\Game-o-mat\\vendor\\GLFW
+	url = https://github.com/TheCherno/glfw.git
