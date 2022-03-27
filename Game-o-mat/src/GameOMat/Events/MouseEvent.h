@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace GameOMat {
 
 	// event for moving the mouse in our window

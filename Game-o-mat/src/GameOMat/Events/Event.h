@@ -1,9 +1,7 @@
 #pragma once
 
+#include "gompch.h"
 #include "GameOMat/Core.h"
-
-#include <string>
-#include<functional>
 
 namespace GameOMat {
 

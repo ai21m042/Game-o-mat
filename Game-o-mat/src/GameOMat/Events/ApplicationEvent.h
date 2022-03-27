@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace GameOMat {
 
 	// event for resizing our displayed window to another width and or height

@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace GameOMat {
 	
 	class GOM_API KeyEvent : public Event {
