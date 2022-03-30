@@ -9,8 +9,9 @@ int main(int argc, char** argv) {
 	GameOMat::Log::Init();
 	GOM_CORE_INFO("Starting Game-O-Mat ...");
 
-	GOM_CORE_WARN("Checking Core Logger");
-	GOM_WARN("Checking Client Logger");
+	// only for testing the loggers
+	// GOM_CORE_WARN("Checking Core Logger");
+	// GOM_WARN("Checking Client Logger");
 
 	auto app = GameOMat::CreateApplication();
 	app->Run();

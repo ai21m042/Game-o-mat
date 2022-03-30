@@ -5,8 +5,10 @@
 
 namespace GameOMat {
 
+	// short custom 'macro' for binding the fkt from the application
 #define BIND_EVENT_FN(x) std::bind(&Application::x, this, std::placeholders::_1)
 
+	// creating the window (platform independent; Create has to be implement for each platform)
 	Application::Application() {
 		mWindow = std::unique_ptr<Window>(Window::Create());
 		// mWindow->SetEventCallback(std::bind(&Application::OnEvent, this, std::placeholders::_1));
@@ -17,11 +19,13 @@ namespace GameOMat {
 		// stub
 	}
 
+	// we stop the game loop on window close
 	bool Application::OnWindowClose(WindowCloseEvent& e) {
 		mRunning = false;
 		return true;
 	}
 	
+	// the game-loop where we draw a simple colored background
 	void Application::Run() {
 
 		// game loop
@@ -32,6 +36,7 @@ namespace GameOMat {
 		}
 	}
 
+	// we define the callbacks for the event types
 	void Application::OnEvent(Event& e) {
 		EventDispatcher dispatcher(e);
 

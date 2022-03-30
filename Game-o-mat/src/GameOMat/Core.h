@@ -13,11 +13,13 @@
 	#error Game-O-Mat only supoorts Windows!
 #endif // GOM_PLATFORM_WINDOWS
 
+// custom bit 'type' (at least for events, later maybe more)
 #define BIT(x) (1 << x)
 
-#ifdef HZ_ENABLE_ASSERTS
-	#define GOM_ASSERT(x, ...) { if(!(x)) { HZ_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
-	#define GOM_CORE_ASSERT(x, ...) { if(!(x)) { HZ_CORE_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
+// asserts are mainly for testing / debugging. here we check if something (=x) is true. this has to be enabled by defining the GOM_ENABLE_ASSERTS define
+#ifdef GOM_ENABLE_ASSERTS
+	#define GOM_ASSERT(x, ...) { if(!(x)) { GOM_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
+	#define GOM_CORE_ASSERT(x, ...) { if(!(x)) { GOM_CORE_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
 #else
 	#define GOM_ASSERT(x, ...)
 	#define GOM_CORE_ASSERT(x, ...)

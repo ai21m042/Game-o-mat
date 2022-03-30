@@ -26,6 +26,7 @@ namespace GameOMat {
 	private:
 		GLFWwindow* mWindow;
 
+		// a simple struct containing the props for the windows
 		struct WindowData {
 			std::string Title;
 			unsigned int Width, Height;
