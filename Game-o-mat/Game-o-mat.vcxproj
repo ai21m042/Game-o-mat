@@ -76,7 +76,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PrecompiledHeader>Create</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>gompch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>GOM_PLATFORM_WINDOWS;GOM_BUILD_DLL;GOM_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -100,7 +100,7 @@ IF EXIST ..\bin\Debug-windows-x86_64\Game-o-mat\Game-o-mat.dll\ (xcopy /Q /E /Y 
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <PrecompiledHeader>Create</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>gompch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>GOM_PLATFORM_WINDOWS;GOM_BUILD_DLL;GOM_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -128,7 +128,7 @@ IF EXIST ..\bin\Release-windows-x86_64\Game-o-mat\Game-o-mat.dll\ (xcopy /Q /E /
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">
     <ClCompile>
-      <PrecompiledHeader>Create</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>gompch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>GOM_PLATFORM_WINDOWS;GOM_BUILD_DLL;GOM_DISTRIBUTION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -172,7 +172,9 @@ IF EXIST ..\bin\Distribution-windows-x86_64\Game-o-mat\Game-o-mat.dll\ (xcopy /Q
     <ClCompile Include="src\GameOMat\Application.cpp" />
     <ClCompile Include="src\GameOMat\Log.cpp" />
     <ClCompile Include="src\GameOMat\Platform\Windows\WindowsWindow.cpp" />
-    <ClCompile Include="src\gompch.cpp" />
+    <ClCompile Include="src\gompch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="vendor\GLFW\GLFW.vcxproj">

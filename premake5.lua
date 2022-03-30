@@ -24,7 +24,7 @@ project "Game-o-mat"
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
 	pchheader "gompch.h"
-	pchsource "GameOMat/src/gompch.cpp"
+	pchsource "Game-o-mat/src/gompch.cpp"
 
 	files
 	{
